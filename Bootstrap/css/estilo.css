@@ -1,0 +1,26 @@
+footer{
+    padding: 10px 10px 10px 10px;
+    margin-bottom: 0px;
+    margin-top: 0px;
+}
+
+a{
+    color: white;
+    text-decoration: none;
+}
+
+a:hover{
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+.card-hotel{
+    flex: 1 150px;
+    padding: 2px 5px 2px 5px;
+}
+
+.btn-reserva{
+    width: 100%;
+
+}
