@@ -48,14 +48,14 @@
             <li class="nav-item">
               <a class="nav-link" href="precios.html">Precios</a>
             </li>
-            <li class="nav-item-active">
-              <a class="nav-link text-light" href="#">Nosotros</a>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">Nosotros</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#">Términos y condiciones</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="contacto.html">Contacto</a>
+            <li class="nav-item-active">
+              <a class="nav-link text-light" href="#">Contacto</a>
             </li>
           </ul>
           <form class="d-flex" role="search">
@@ -76,18 +76,59 @@
   <div class="container pt-5">
 
     <nav aria-label="breadcrumb">
-      <ol class="breadcrumb bg-dark bg-opacity-25">
+      <ol class="breadcrumb bg-dark bg-opacity-25 w-75">
         <li class="breadcrumb-item"><a class="text-dark" href="index.html">Home</a></li>
-        <li class="breadcrumb-item active" aria-current="page">Nosotros</li>
+        <li class="breadcrumb-item active" aria-current="page">Contacto</li>
       </ol>
     </nav>
 
-    <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error adipisci officia suscipit deserunt facilis ipsa at beatae quibusdam unde? Minus rerum doloremque mollitia quisquam voluptates modi quas eveniet aut laudantium!
-      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quibusdam magnam repudiandae ratione, esse placeat debitis explicabo fuga culpa consequatur nemo laborum incidunt exercitationem rerum modi veniam ut suscipit reprehenderit tempora.
-      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolore laudantium quia sunt ratione recusandae itaque dolorum omnis molestiae a similique quibusdam debitis asperiores rerum illum explicabo consectetur, eos aliquam quasi.
-    </span>
+    <h1 class="mt-5">Déjame tu comentario</h1>
+
+    <form>
+      <div class="form-row d-flex mt-4">
+        <div class="form-group col-sm-3">
+          <label for="nombre">Nombre</label>
+          <input type="text" class="form-control w-75" id="nombre" placeholder="Escribe tu nombre">
+        </div>
+        <div class="form-group col-sm-6">
+          <label for="apellido">Apellidos</label>
+          <input type="text" class="form-control w-100" id="apellido" placeholder="Escribe tus apellidos">
+        </div>
+      </div>
+      <div class="form-group mt-3">
+          <label for="email">E-mail</label>
+          <input type="email" class="form-control w-75" id="email" placeholder="Escribe tu correo electrónico">
+      </div>
+      <div class="form-row d-flex mt-4">
+        <div class="form-group col-sm-6">
+          <label for="direccion">Dirección</label>
+          <input type="text" class="form-control w-75" id="direccion" placeholder="Añade tu dirección">
+        </div>
+        <div class="form-group col-sm-6">
+          <label for="provincia">Provincia</label>
+          <br>
+          <select name="provincia" id="provincia" class="form-control w-50">
+            <option selected>Gipuzkoa</option>
+            <option>Jaén</option>S
+            <option>Murcia</option>
+            <option>Tarragona</option>
+          </select>
+        </div>
+      </div>
+      <div class="form-group mt-4">
+        <label for="comentario">Comentario</label>
+        <textarea name="comentario" id="comentario" cols="10" rows="7" class="form-control w-75"></textarea>
+      </div>
+
+      <div class="form-group mt-3">
+        <div class="form-check">
+          <input type="checkbox" class="form-check-input" id="gridCheck">
+          <label for="gridCheck" class="form-check-label">Quiero que me contacten</label>
+        </div>
+      </div>
+      <button type="submit" class="btn btn-outline-info mt-4">Enviar</button>
+    </form>
   </div>
-</body>
 
 <footer class="bg-info mt-5">
     <div class="row">
@@ -119,11 +160,12 @@
       </div>
 
       <div class="col-sm-4 d-flex flex-column align-items-end">
-        <a href="#">Nosotros</a>
+        <a href="about.html">Nosotros</a>
         <a href="precios.html">Precios</a>
         <a href="https://www.instagram.com">Términos y condiciones</a>
-        <a href="contacto.html">Contacto</a>
+        <a href="#">Contacto</a>
       </div>
     </div>
   </footer>
+</body>
 </html>
