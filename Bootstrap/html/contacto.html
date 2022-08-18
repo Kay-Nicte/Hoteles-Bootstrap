@@ -57,7 +57,9 @@
                     </ul>
                     <form class="d-flex" role="search">
                         <input class="form-control me-2" type="search" placeholder="¿Qué necesitas?" aria-label="Search">
-                        <button class="btn btn-success" type="submit">Buscar</button>
+                        <button class="btn btn-success" type="submit"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                          <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+                        </svg></button>
                     </form>
                 </div>
             </div>
@@ -86,27 +88,40 @@
 
         <form>
             <div class="form-row d-flex mt-4">
-                <div class="form-group col-sm-6">
-                    <label for="nombre">Nombre</label>
-                    <input type="text" class="form-control" id="nombre" placeholder="Escribe tu nombre">
+                <div class="input-group">
+                    <span class="input-group-text"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person" viewBox="0 0 16 16">
+                      <path d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0zm4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4zm-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664h10z"/>
+                    </svg></span>
+                    <input type="text" class="form-control" id="nombre" placeholder="Introduce tu nombre">
                 </div>
-                <div class="form-group col-sm-6">
-                    <label for="apellido">Apellidos</label>
-                    <input type="text" class="form-control" id="apellido" placeholder="Escribe tus apellidos">
+                <div class="input-group">
+                    <span class="input-group-text"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person-fill" viewBox="0 0 16 16">
+                      <path d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H3zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/>
+                    </svg></span>
+                    <input type="text" class="form-control" id="nombre" placeholder="Introduce tus apellidos">
                 </div>
-            </div>
-            <div class="form-group mt-3">
-                <label for="email">E-mail</label>
-                <input type="email" class="form-control" id="email" placeholder="Escribe tu correo electrónico">
             </div>
             <div class="form-row d-flex mt-4">
-                <div class="form-group col-sm-6">
-                    <label for="direccion">Dirección</label>
-                    <input type="text" class="form-control" id="direccion" placeholder="Añade tu dirección">
+                <div class="input-group">
+                    <span class="input-group-text"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-envelope-heart" viewBox="0 0 16 16">
+                      <path fill-rule="evenodd" d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4Zm2-1a1 1 0 0 0-1 1v.217l3.235 1.94a2.76 2.76 0 0 0-.233 1.027L1 5.384v5.721l3.453-2.124c.146.277.329.556.55.835l-3.97 2.443A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741l-3.968-2.442c.22-.28.403-.56.55-.836L15 11.105V5.383l-3.002 1.801a2.76 2.76 0 0 0-.233-1.026L15 4.217V4a1 1 0 0 0-1-1H2Zm6 2.993c1.664-1.711 5.825 1.283 0 5.132-5.825-3.85-1.664-6.843 0-5.132Z"/>
+                    </svg></span>
+                    <input type="email" class="form-control" id="nombre" placeholder="Introduce tu e-mail">
                 </div>
-                <div class="form-group col-sm-6">
-                    <label for="provincia">Provincia</label>
-                    <br>
+            </div>
+
+            <div class="form-row d-flex mt-4">
+                <div class="input-group">
+                    <span class="input-group-text"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-signpost-2-fill" viewBox="0 0 16 16">
+                      <path d="M7.293.707A1 1 0 0 0 7 1.414V2H2a1 1 0 0 0-1 1v2a1 1 0 0 0 1 1h5v1H2.5a1 1 0 0 0-.8.4L.725 8.7a.5.5 0 0 0 0 .6l.975 1.3a1 1 0 0 0 .8.4H7v5h2v-5h5a1 1 0 0 0 1-1V8a1 1 0 0 0-1-1H9V6h4.5a1 1 0 0 0 .8-.4l.975-1.3a.5.5 0 0 0 0-.6L14.3 2.4a1 1 0 0 0-.8-.4H9v-.586A1 1 0 0 0 7.293.707z"/>
+                    </svg></span>
+                    <input type="text" class="form-control" id="nombre" placeholder="Introduce tu dirección">
+                </div>
+                <div class="input-group">
+                    <span class="input-group-text"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-pin-map-fill" viewBox="0 0 16 16">
+                      <path fill-rule="evenodd" d="M3.1 11.2a.5.5 0 0 1 .4-.2H6a.5.5 0 0 1 0 1H3.75L1.5 15h13l-2.25-3H10a.5.5 0 0 1 0-1h2.5a.5.5 0 0 1 .4.2l3 4a.5.5 0 0 1-.4.8H.5a.5.5 0 0 1-.4-.8l3-4z"/>
+                      <path fill-rule="evenodd" d="M4 4a4 4 0 1 1 4.5 3.969V13.5a.5.5 0 0 1-1 0V7.97A4 4 0 0 1 4 3.999z"/>
+                    </svg></span>
                     <select name="provincia" id="provincia" class="form-control">
             <option selected disabled>Selecciona tu provincia</option>
             <option>Álava (Araba) (País Vasco, ES)</option>
@@ -158,25 +173,17 @@
             <option>Valladolid (Castilla y León, ES)</option>
             <option>Vizcaya (Bizkaia) (País Vasco, ES)</option>
             <option>Zamora (Castilla y León, ES)</option>
-            <option>Zaragoza (Aragon, ES)</option>  
-            
-            
-            
+            <option>Zaragoza (Aragon, ES)</option>              
           </select>
                 </div>
             </div>
-            <div class="form-group mt-4">
-                <label for="comentario">Comentario</label>
-                <textarea name="comentario" id="comentario" cols="10" rows="7" class="form-control"></textarea>
-            </div>
-
-            <div class="form-group mt-3">
-                <div class="form-check">
-                    <input type="checkbox" class="form-check-input" id="gridCheck">
-                    <label for="gridCheck" class="form-check-label">Quiero montarme en tu velero</label>
+            <div class="form-row d-flex mt-4">
+                <div class="input-group h-50">
+                    <textarea id="textarea" name="textarea" style="width: 100%; height: 100%;" placeholder=" ¿Hay algo que te inquieta, te atormenta o te perturba? Háznoslo saber :)"></textarea>
                 </div>
             </div>
-            <button type="submit" class="btn btn-outline-success mt-4">Enviar</button>
+
+            <button type="submit" class="btn btn-outline-dark mt-4">Enviar</button>
         </form>
     </div>
 
