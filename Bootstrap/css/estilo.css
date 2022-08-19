@@ -22,7 +22,10 @@ a:hover{
 
 .btn-reserva{
     width: 100%;
+}
 
+.botones{
+    justify-content: space-between;
 }
 
 .breadcrumb-item{
