@@ -25,7 +25,7 @@ a:hover{
 }
 
 .botones{
-    justify-content: space-between;
+    justify-content:flex-start;
 }
 
 .breadcrumb-item{
