@@ -115,7 +115,7 @@
         <img src="../img/barcelona.jpg" alt="hotel" class="card-img-top">
 
         <div class="card-body text-start mt-3 mb-3">
-          <h3 class="card-title">Hotel Barcelona</h3>
+          <h3 class="card-title" data-bs-toggle="tooltip" data-placement="top" title="¡Las primeras reservas cuentan con clases de tango gratis!">Hotel Barcelona</h3>
           <h6 class="card-subtitle text-muted mb-2">España</h6>
 
           <p class="card-text">Hotel ubicado en pleno centro de Barcelona a pocos metros de la playa.</p>
@@ -562,4 +562,17 @@
     </div>
   </body>
   </footer>
+
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap js -->
+
+  <script src="node_modules/jquery/dist/jquery.min.js"></script>
+  <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
+  <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+
+  <script>
+    $(function(){
+      $("[data-bs-toggle='tooltip']").tooltip();
+    });
+  </script>
 </html>
