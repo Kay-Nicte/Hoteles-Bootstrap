@@ -104,8 +104,29 @@
 
     <hr>
 
-    <!--La clase img-fluid es para que la imagen sea responsive-->
-    <img src="../img/hotel.jpg" alt="hotel" class="img-fluid">
+    <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active"> 
+          <!--La clase img-fluid es para que la imagen sea responsive-->
+          <img src="../img/hotel.jpg" class="d-block w-100 img-fluid" alt="hotel">
+        </div>
+        <div class="carousel-item">
+          <img src="../img/hotel2.jpg" class="d-block w-100  img-fluid" alt="hotel">
+        </div>
+        <div class="carousel-item">
+          <img src="../img/hotel3.jpg" class="d-block w-100  img-fluid" alt="hotel">
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+
 
     <hr>
 
@@ -121,7 +142,7 @@
           <p class="card-text">Hotel ubicado en pleno centro de Barcelona a pocos metros de la playa.</p>
         </div>
         <div class="botones d-flex">
-          <p><a class="btn btn-dark text-light btn-reserva" role="button">Quiero reservar</a></p>
+          <p><a class="btn btn-dark text-light btn-reserva" role="button" data-bs-toggle="popover" title="Promociones">Quiero reservar</a></p>
           <p><a class="btn btn-outline-dark btn-reserva" role="button" data-bs-toggle="modal" data-bs-target="#contacto">Contacto</a></p>
           <p><a class="btn btn-info text-light" role="button" data-bs-toggle="modal" data-bs-target="#info-barna">Más info +</a></p>
       </div>    
@@ -573,6 +594,7 @@
   <script>
     $(function(){
       $("[data-bs-toggle='tooltip']").tooltip();
+      $("[data-bs-toggle='popover']").popover();
     });
   </script>
 </html>
